@@ -71,7 +71,7 @@ Run:
 
 If you followed the above instructions there should be no problems, hurrah!
 
-### Else if it returns a problem
+### Else if it returns a problem:
 
 Fix the problem and run through the steps again until there are no problems!
 
@@ -93,6 +93,6 @@ Run:
 
     $ git push origin develop
 
-### Else if it returns a problem
+### Else if it returns a problem:
 
 Fix the problem and run through the steps again until there are no problems!
