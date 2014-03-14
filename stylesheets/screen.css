@@ -7,25 +7,23 @@
 |
 */
 
-@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,500,700,400italic,500italic,700italic|Alegreya+Sans:300,400,700,300italic,400italic,700italic|Alegreya:400italic,700italic,400,700&subset=latin,latin-ext);
-
-/* 21px - The quick brown fox jumps over the lazy dog */
-.class-for-21px {
-  font-size: 1.1667em; /* 21px */
-  line-height: 1.0000em; /* 21px */
-  margin-top: 1.0000em;  margin-bottom: 0.0000em;
+/* 24px - The quick brown fox jumps over the lazy dog */
+.class-for-24px {
+  font-size: 1.1429em; /* 24px */
+  line-height: 1.2917em; /* 31px */
+  margin-top: 1.2917em;  margin-bottom: 0.0000em;
+}
+/* 22px - The quick brown fox jumps over the lazy dog */
+.class-for-22px {
+  font-size: 1.0476em; /* 22px */
+  line-height: 1.4091em; /* 31px */
+  margin-top: 1.4091em;  margin-bottom: 0.0000em;
 }
 /* 18px - The quick brown fox jumps over the lazy dog */
 .class-for-18px {
-  font-size: 1.0000em; /* 18px */
-  line-height: 1.1667em; /* 21px */
-  margin-top: 1.1667em;  margin-bottom: 0.0000em;
-}
-/* 16px - The quick brown fox jumps over the lazy dog */
-.class-for-16px {
-  font-size: 0.8889em; /* 16px */
-  line-height: 1.3125em; /* 21px */
-  margin-top: 1.3125em;  margin-bottom: 0.0000em;
+  font-size: 0.8571em; /* 18px */
+  line-height: 1.7222em; /* 31px */
+  margin-top: 1.7222em;  margin-bottom: 0.0000em;
 }
 
 
@@ -39,9 +37,10 @@
 */
 
 body {
-  font-size: 18px;
-  font-family: "Alegreya Sans";
-  max-width: 800px;
+  font-size: 22px;
+  line-height: 1.5;
+  font-family: 'Alegreya Sans';
+  max-width: 28.889em;
   margin: auto;
   padding: 50px 20px;
   color: #191919;
@@ -65,21 +64,34 @@ nav {
 }
 
 p {
-  font-size: 1em; /* 18px */
-  line-height: 1.1667em; /* 21px */
-  margin: 0 0 1.1667em 0;
+  text-rendering: optimizeLegibility;
+  font-size: 1em; /* 21px */
+  line-height: 1.4762em; /* 31px */
+  margin: 0 0 1.4762em 0;
+  /*word-spacing: 0.25em;*/
 }
 
 a {
   font-size: inherit;
   line-height: inherit;
   margin: inherit;
+  text-decoration: none;
+  color: #191919;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.action_link {
   color: #D33343;
 }
 
 .action_button {
+  font-size: inherit;
+  line-height: inherit;
+  margin: inherit;
   text-transform: lowercase;
-  font-family: "Alegreya Sans SC";
+  font-family: 'Alegreya Sans SC';
   text-decoration: none;
   font-weight: 500;
   color: #191919;
@@ -87,9 +99,10 @@ a {
 }
 
 h1, h2, h3 {
-  font-size: 1.0000em; /* 18px */
-  line-height: 1.1667em; /* 21px */
-  margin: 1.1667em auto;
+  font-size: 1.0476em; /* 22px */
+  line-height: 1.4091em; /* 31px */
+  margin-top: 1.4091em;  margin-bottom: 0.0000em;
+  text-rendering: optimizeLegibility;
   display: inline-block;
 }
 
@@ -104,35 +117,25 @@ h1 {
   left: 30px;
 }
 
-#nodex_search {
-  float: left;
-}
 #nodex_search:before {
-  content: "◦";
+  content: '◦';
   vertical-align: middle;
   margin-right: 10px;
 }
 #new_doc {
 
 }
-#nodex_menu {
-  float: right;
-}
 
 #nodex_menu:after {
-  content: "⋯";
+  content: '⋯';
   vertical-align: middle;
   margin-left: 10px;
 }
 
-#nodex_archive {
-  float: right;
-  margin-top: 1.1667em;  margin-bottom: 0.0000em;
-}
+
 
 .divider {
   border-bottom: 1px dotted #ccc;
-  /*padding-bottom: 1.1667em;*/
 }
 
 .nodex_logo {
@@ -141,7 +144,7 @@ h1 {
 
 .nodex_logo:before {
   position: absolute;
-  content: "/";
+  content: '/';
   margin-left: -10px;
   color: #D33343;
 }
@@ -159,28 +162,29 @@ h1 {
 }
 
 .doc_status {
-  text-transform: lowercase;
-  font-family: "Alegreya Sans SC";
-  /*color: #ccc;*/
+  font-size: 0.8571em; /* 18px */
+  line-height: 1.7222em; /* 31px */
+  /*margin-top: 1.7222em;  margin-bottom: 0.0000em;*/
 }
 
 .doc_menu {
   display: none;
 }
 
-.add_doc_collaborators {
-  float: right;
-  margin-top: 1.1667em;  margin-bottom: 0.0000em;
+.float_left {
+  float: left;
+  font-size: inherit; /* 22px */
+  line-height: inherit; /* 31px */
 }
 
-.view_doc_activity {
+.float_right {
   float: right;
-  font-style: normal;
+  font-size: inherit; /* 22px */
+  line-height: inherit; /* 31px */
 }
 
-.toggle_doc_menu {
-  float: right;
-  margin-top: 1.1667em;  margin-bottom: 0.0000em;
+.with_margin {
+  margin-top: 1.4091em;  margin-bottom: 0.0000em;
 }
 
 .doc_title {
@@ -188,7 +192,4 @@ h1 {
   text-decoration: none;
 }
 
-.*_menu {
-  float: right;
-  margin-top: 1.1667em;  margin-bottom: 0.0000em;
-}
+

@@ -1,0 +1,18 @@
+body {
+  background: #212426;
+  color: #fff;
+}
+
+.doc_title {
+  color: #fff;
+}
+
+.action_link {
+  color: #C7AF3F;
+  font-weight: 400;
+}
+
+.action_button {
+  color: #8AB8A2;
+  font-weight: 400;
+}

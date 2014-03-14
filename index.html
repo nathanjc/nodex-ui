@@ -11,8 +11,11 @@
   <meta name="description" content="">
   
   <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,500,400italic,500italic|Alegreya+Sans:300,400,500,700,300italic,400italic,500italic,700italic|Alegreya:400italic,700italic,400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+  <!-- slim color scheme -->
+  <!-- <link rel="stylesheet" type="text/css" href="stylesheets/slim.css"> -->
 </head>
 <body>
   <!-- <div id="global_nav">
@@ -21,79 +24,81 @@
   <div id="nodex">
     <header>
       <nav>
-        <a href="" id="nodex_search" class="action_button">search</a>
+        <a href="" id="nodex_search" class="action_button float_left">search</a>
         <a href="" id="new_doc" class="action_button">+ new doc</a>
-        <a href="" id="nodex_menu" class="action_button">menu</a>
+        <a href="" id="nodex_menu" class="action_button float_right">menu</a>
       </nav>
     </header>
     <main role="content">
       <header>
         <h1>All docs A-Z</h1>
-        <a href="#" id="nodex_archive" class="action_button">Archives & Trash</a>
+        <a href="#" id="nodex_archive" class="action_button float_right with_margin">Archives & Trash…</a>
       </header>
-      <div id="doc_container">
-        <div class="doc_list_item">
-          <h3>
-            <a href="" class="doc_title">The Death Of Magic</a>
-          </h3>
-          
-          <a href="" class="toggle_doc_menu action_button">⋯</a>
+      <div id="docs_container">
+        <div id="doc_container">
+          <div class="doc_list_item">
+            <h3>
+              <a href="" class="doc_title">Doc Title</a>
+            </h3>
+            
+            <a href="" class="action_button float_right with_margin">⋯</a>
 
-          <ul class="doc_menu">
-            <li>
-              <a href="" class="action_button">archive</a>
-            </li>
-            <li>
-              <a href="" class="action_button">delete</a>
-            </li>
-          </ul>
+            <ul class="doc_menu">
+              <li>
+                <a href="" class="action_button">archive</a>
+              </li>
+              <li>
+                <a href="" class="action_button">delete</a>
+              </li>
+            </ul>
 
-          <p class="doc_activity divider"><span class="author handle">@dmillman</span> edited <a href="">Node Title</a> <a href="" class="view_doc_activity action_button">view all activity</a></p>
-          <p class="doc_status">owned by <span class="author handle">@nrapin</span> • <a href="" class="action_button">3 collaborators</a></p>
+            <p class="doc_activity divider"><span class="author handle">@uthor</span> last-action <a href="" class="action_link">Node Title</a></p>
+            <p class="doc_status">Owned by <span class="author handle">@uthor</span><a href="" class="action_button float_right">+ add collaborators</a></p>
+          </div>
         </div>
-      </div>
-      
-      <div id="doc_container">
-        <div class="doc_list_item">
-          <h3>
-            <a href="" class="doc_title">The Story Of Red</a>
-          </h3>
-          
-          <a href="" class="toggle_doc_menu action_button">⋯</a>
+        
+        <div id="doc_container">
+          <div class="doc_list_item">
+            <h3>
+              <a href="" class="doc_title">The Story Of Red</a>
+            </h3>
+            
+            <a href="" class="action_button float_right with_margin">⋯</a>
 
-          <ul class="doc_menu">
-            <li>
-              <a href="" class="action_button">archive</a>
-            </li>
-            <li>
-              <a href="" class="action_button">delete</a>
-            </li>
-          </ul>
+            <ul class="doc_menu">
+              <li>
+                <a href="" class="action_button">archive</a>
+              </li>
+              <li>
+                <a href="" class="action_button">delete</a>
+              </li>
+            </ul>
 
-          <p class="doc_activity divider"><span class="author handle">@jrdcc</span> edited <a href="">Node Title</a> <a href="" class="view_doc_activity action_button">view all activity</a></p>
-          <p class="doc_status">owned by <span class="author handle">@gbeyer</span> • <a href="" class="action_button">2 collaborators</a></p>
+            <p class="doc_activity divider"><span class="author handle">@jrdcc</span> edited <a href="" class="action_link">Smoke & Rings</a></p>
+            <p class="doc_status">Owned by <span class="author handle">@gbeyer</span><a href="" class="action_button float_right">2 collaborators</a></p>
+          </div>
         </div>
-      </div>
 
-      <div id="doc_container">
-        <div class="doc_list_item">
-          <h3>
-            <a href="" class="doc_title">Black Lipstick</a>
-          </h3>
-          
-          <a href="" class="toggle_doc_menu action_button">⋯</a>
+        <div id="doc_container">
+          <div class="doc_list_item">
+            <h3>
+              <a href="" class="doc_title">Black Lipstick</a>
+            </h3>
+            
+            <a href="" class="action_button float_right with_margin">⋯</a>
 
-          <ul class="doc_menu">
-            <li>
-              <a href="" class="action_button">archive</a>
-            </li>
-            <li>
-              <a href="" class="action_button">delete</a>
-            </li>
-          </ul>
+            <ul class="doc_menu">
+              <li>
+                <a href="" class="action_button">archive</a>
+              </li>
+              <li>
+                <a href="" class="action_button">delete</a>
+              </li>
+            </ul>
 
-          <p class="doc_activity divider"><span class="author handle">@jenlee</span> edited <a href="">Node Title</a> <a href="" class="view_doc_activity action_button">view all activity</a></p>
-          <p class="doc_status">owned by <span class="author handle">@jenlee</span> • <a href="" class="action_button">2 collaborators</a></p>
+            <p class="doc_activity divider">You reviewed <a href="" class="action_link">Chapter 2: Biting My Nails</a></p>
+            <p class="doc_status">Owned by You<a href="" class="action_button float_right">2 collaborators</a></p>
+          </div>
         </div>
       </div>
     </main>
