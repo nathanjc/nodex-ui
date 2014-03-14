@@ -1,3 +1,4 @@
+
 # 1. You want to start editing some code
 
 Open your terminal:
@@ -22,7 +23,6 @@ Start editing.
 
 Start editing.
 
-===
 
 # 2. You've edited some code and want to save your changes
 
@@ -48,7 +48,6 @@ You can shortcut the above command to:
 
     $ git commit -am "I made some awesome updates to my code!"
 
-===
 
 # 3. You're done working on a feature and want to merge your edits back to the develop branch
 
@@ -75,7 +74,6 @@ If you followed the above instructions there should be no problems, hurrah!
 
 Fix the problem and run through the steps again until there are no problems!
 
-===
 
 # You've committed your code and want to push the updates to Github
 
