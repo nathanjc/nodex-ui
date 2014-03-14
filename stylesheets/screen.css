@@ -9,24 +9,33 @@
 
 @import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,500,700,400italic,500italic,700italic|Alegreya+Sans:300,400,700,300italic,400italic,700italic|Alegreya:400italic,700italic,400,700&subset=latin,latin-ext);
 
-/* 21px - The quick brown fox jumps over the lazy dog */
+
+/* 27px */
+.class-for-27px {
+  font-size: 1.5000em; /* 27px */
+  line-height: 1.5556em; /* 42px */
+  margin-top: 0.7778em;  margin-bottom: 0.0000em;
+}
+/* 21px */
 .class-for-21px {
   font-size: 1.1667em; /* 21px */
   line-height: 1.0000em; /* 21px */
   margin-top: 1.0000em;  margin-bottom: 0.0000em;
 }
-/* 18px - The quick brown fox jumps over the lazy dog */
+/* 18px  */
 .class-for-18px {
   font-size: 1.0000em; /* 18px */
   line-height: 1.1667em; /* 21px */
   margin-top: 1.1667em;  margin-bottom: 0.0000em;
 }
-/* 16px - The quick brown fox jumps over the lazy dog */
-.class-for-16px {
-  font-size: 0.8889em; /* 16px */
-  line-height: 1.3125em; /* 21px */
-  margin-top: 1.3125em;  margin-bottom: 0.0000em;
+/* 14px */
+.class-for-14px {
+  font-size: 0.7778em; /* 14px */
+  line-height: 1.5000em; /* 21px */
+  margin-top: 1.5000em;  margin-bottom: 0.0000em;
 }
+
+
 
 
 /*
@@ -81,7 +90,7 @@ a {
   text-transform: lowercase;
   font-family: "Alegreya Sans SC";
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   color: #191919;
   color: inherit;
 }
